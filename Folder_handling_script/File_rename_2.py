@@ -1,16 +1,19 @@
-"""
-* @File name: rename_files.py
-* @Author: EddyCliff
-* @Version: 1.0
-* @Date: 2023-09-10
-* @Description: 这个 Python 脚本用于重命名指定文件夹中的所有文件。
-*               它会遍历指定文件夹内的所有文件，检查文件名中是否包含空格，并将空格替换为下划线。
-*               重命名后的文件将保留在原文件夹内，旧文件名和新文件名都将打印出来以供确认。
-"""
+'''
+file: File_rename_2.py
+author: EddyCliff
+date: Do not edit
+LastEditTime: 2023-11-05 16:56:00
+FilePath: /知乎MarKdownd:/git_repositories/ScriptHaven/Folder_handling_script/File_rename_2.py
+brief: 此脚本会遍历指定文件夹内的所有文件
+       在每个文件名前面加上 "03"，然后删除文件名中的空格。
+copyright (c) 2023 by EddyCliff, All Rights Reserved. 
+'''
+
 import os
 
 # 设置要操作的文件夹路径
-folder_path = "D:/git_repositories/Embedded-Learning-Notes/Basic_Linux_operations/img"
+
+folder_path = "D:/myblog/Eddy-hugo-papermod/static/img/tech/LLC"
 
 # 遍历文件夹中的所有文件
 for filename in os.listdir(folder_path):
@@ -18,6 +21,8 @@ for filename in os.listdir(folder_path):
     if os.path.isfile(os.path.join(folder_path, filename)):
         # 删除文件名中的空格，并组成新的文件名
         new_filename = filename.replace(" ", "")
+        # 在新文件名前加上 "00"
+        new_filename = "03" + new_filename
         
         # 重命名文件
         os.rename(os.path.join(folder_path, filename), os.path.join(folder_path, new_filename))
