@@ -4,9 +4,7 @@ author: EddyCliff
 date: Do not edit
 LastEditTime: 2023-11-08 13:57:54
 FilePath: /知乎MarKdownd:/git_repositories/ScriptHaven/Folder_handling_script/File_rename_1.py
-brief: 这个 Python 脚本用于重命名指定文件夹中的所有文件。
-*      它会遍历指定文件夹内的所有文件，检查文件名中是否包含空格，并将空格替换为下划线。
-*      重命名后的文件将保留在原文件夹内，旧文件名和新文件名都将打印出来以供确认。
+brief: 该脚本会遍历指定文件夹内的所有文件,检查文件名中是否包含空格,如有空格则删除.
 copyright (c) 2023 by EddyCliff, All Rights Reserved. 
 '''
 
@@ -14,7 +12,7 @@ import os
 
 # 设置要操作的文件夹路径
 
-folder_path = "D:/iiii"
+folder_path = "D:/your_folder"
 
 # 遍历文件夹中的所有文件
 for filename in os.listdir(folder_path):

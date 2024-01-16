@@ -2,15 +2,15 @@
 file: File_rename_3.py
 author: EddyCliff
 date: Do not edit
-LastEditTime: 2023-11-08 14:02:16
+LastEditTime: 2024-01-16 19:03:19
 FilePath: /知乎MarKdownd:/git_repositories/ScriptHaven/Folder_handling_script/File_rename_3.py
-brief: 该脚本是为了重命名指定文件夹下所有以“.mp4”结尾的文件名,并且删除文件名中的"教程."。
+brief: 该脚本可以重命名指定文件夹下所有以“.mp4”结尾的文件名,并且删除文件名中的"教程."。
 copyright (c) 2023 by EddyCliff, All Rights Reserved. 
 '''
 import os  
   
 # 设置要操作的文件夹路径  
-folder_path = "D:/edge download/qianfeng/kecheng/10"  
+folder_path = "D:/your_folder"  
   
 # 遍历文件夹中的所有文件  
 for filename in os.listdir(folder_path):  
